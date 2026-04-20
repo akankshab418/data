@@ -1,26 +1,23 @@
 # Mock Data Generation
 
 ## Objective
-This project generates synthetic/mock CSV data for database tables using the provided schema.
+Generate synthetic/mock CSV data for database tables for testing, development, and demo purposes.
 
-Used for:
-- testing
-- development
-- demos
-
-## Files
-- generate_data.py → main script
-- db_info.json → schema info
-- lookup_tables/ → reference CSV files
-- mock_db/ → generated CSV files
+## Project Files
+- generate_data.py -> main generation script
+- db_info.json -> schema metadata
+- lookup_tables/ -> reference CSV files
+- mock_db/ -> generated CSV outputs
 
 ## Features
-- One CSV per table
-- Uses schema automatically
-- Preserves foreign key references
-- Generates users and request with custom logic
+- Generates one CSV per table
+- Uses schema from db_info.json
+- Loads lookup/reference data first
+- Preserves foreign key relationships
+- Custom generation for users and request tables
 
 ## Run
 
 ```bash
 python generate_data.py
+Last updated for PR submission.
